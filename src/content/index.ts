@@ -837,7 +837,7 @@ export const faq: {
       id: 2,
       question: "How fast is my server ready?",
       answer:
-        "TODO: confirm exact provisioning time after checkout at billing.petalnodes.cloud.",
+        "Your server is generally provisioned within 15–30 minutes after successful payment at billing.petalnodes.cloud.",
     },
     {
       id: 3,
@@ -872,7 +872,8 @@ export const faq: {
     {
       id: 8,
       question: "Do you offer refunds?",
-      answer: "TODO: refund policy (pending owner confirmation)",
+      answer:
+        "Refund requests are reviewed on a case-by-case basis. Please contact our support team for assistance. Refund approval is subject to review.",
     },
     {
       id: 9,

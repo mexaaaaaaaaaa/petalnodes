@@ -108,8 +108,8 @@ export const docsPage = {
           title: "Accessing your billing area and Game Panel",
           summary: "Where to manage subscriptions, tickets, and launch your server.",
           steps: [
-            "Complete checkout in the Client Area at billing.petalnodes.cloud, or open a Discord Support Ticket when claiming a Petal or Bloom reward.",
-            "Sign in to the Game Panel at panel.petalnodes.cloud to locate your provisioned server.",
+            "Complete checkout in the Client Area at billing.petalnodes.cloud. Your server is generally provisioned within 15–30 minutes after successful payment.",
+            "Sign in to the Game Panel at panel.petalnodes.cloud to locate your provisioned server once setup completes.",
             "Confirm your assigned region (Singapore, Miami, or India) and start your server from the Console tab.",
           ],
         },
@@ -275,6 +275,8 @@ export const docsPage = {
           summary: "Separate workflows for paid INR hosting vs Discord invite & boost rewards.",
           steps: [
             "Manage paid Minecraft and VPS subscriptions, invoices, and plan upgrades inside https://billing.petalnodes.cloud.",
+            "Provisioning: Servers are generally provisioned within 15–30 minutes after successful payment.",
+            "Refunds: Refund requests are reviewed on a case-by-case basis. Please contact our support team for assistance. Refund approval is subject to review.",
             "To claim Petal Free Server Rewards (6–30 invites, 2GB–17GB RAM) or Bloom Boost Rewards (1–4 boosts, 3GB–12GB RAM), open a Discord Support Ticket.",
             "Keep active server boosts enabled for Bloom tiers and follow posted invite integrity rules for Petal rewards.",
           ],
@@ -478,8 +480,7 @@ export const legalDocs: Record<"terms" | "privacy" | "sla", LegalDocument> = {
       {
         id: "billing-refunds",
         title: "3. Billing, Renewals & Refunds",
-        body: "Plan pricing is displayed in INR (₹) per month on petalnodes.cloud and managed via billing.petalnodes.cloud. Unpaid invoices may lead to suspension and eventual data removal once an invoice grace window expires.",
-        todoMarker: "TODO: owner-approved refund policy, cancellation window, and chargeback terms",
+        body: "Plan pricing is displayed in INR (₹) per month on petalnodes.cloud and managed via billing.petalnodes.cloud. Your server is generally provisioned within 15–30 minutes after successful payment. Refund requests are reviewed on a case-by-case basis. Please contact our support team for assistance. Refund approval is subject to review.",
       },
       {
         id: "backups-responsibility",
