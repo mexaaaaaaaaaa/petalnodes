@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+:root {
+  --color-paper: #FBF6EE;
+  --color-paper-shade: #F1E7D6;
+  --color-paper-line: #E4D6C1;
+  --color-ink: #2B2230;
+  --color-ink-soft: #6B5E6E;
+  --color-blossom-50: #FFF1F4;
+  --color-blossom-200: #FFC9D6;
+  --color-blossom-400: #FF8FAB;
+  --color-blossom-600: #E2557B;
+  --color-moss: #6FAF5B;
+  --color-bark: #6B4A3A;
+  --color-lantern: #FFC75A;
+  --color-sky-day-top: #CFE6FF;
+  --color-sky-day-horizon: #FFE9DE;
+  --color-sky-dusk-top: #2E2440;
+  --color-sky-dusk-horizon: #F7A38B;
+  --color-alert: #D94A3A;
+
+  /* Compatibility tokens for DoodleCrewFooter preset="auto" */
+  --color-background: #FBF6EE;
+  --color-foreground: #2B2230;
+}
+
+@theme {
+  --color-paper: #FBF6EE;
+  --color-paper-shade: #F1E7D6;
+  --color-paper-line: #E4D6C1;
+  --color-ink: #2B2230;
+  --color-ink-soft: #6B5E6E;
+  --color-blossom-50: #FFF1F4;
+  --color-blossom-200: #FFC9D6;
+  --color-blossom-400: #FF8FAB;
+  --color-blossom-600: #E2557B;
+  --color-moss: #6FAF5B;
+  --color-bark: #6B4A3A;
+  --color-lantern: #FFC75A;
+  --color-alert: #D94A3A;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Shantell Sans", cursive, sans-serif;
+  --font-body: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "Pixelify Sans", ui-monospace, monospace;
+  --font-serif-soft: "Fraunces", Georgia, serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+}
+
+.font-display-tight {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-handwriting {
+  font-family: var(--font-hand);
+  font-variation-settings: "BNCE" 40, "INFM" 60;
+}
+
+.font-pixel-tabular {
+  font-family: var(--font-pixel);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-fraunces-italic {
+  font-family: var(--font-serif-soft);
+  font-style: italic;
+  font-variation-settings: "SOFT" 100;
+}
+
+/* Sticker button micro-interaction */
+.sticker-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid var(--color-ink);
+  box-shadow: 3px 3px 0 var(--color-ink);
+  transition: transform 180ms cubic-bezier(0.3, 1.4, 0.5, 1),
+    box-shadow 180ms cubic-bezier(0.3, 1.4, 0.5, 1),
+    background-color 180ms ease;
+}
+
+.sticker-btn:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 4px 5px 0 var(--color-ink);
+}
+
+.sticker-btn:active {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 1px 1px 0 var(--color-ink);
+}
+
+/* Ruled notebook paper for mobile sheet and compare table */
+.notebook-ruled {
+  background-color: var(--color-paper);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 35px,
+    var(--color-paper-line) 35px,
+    var(--color-paper-line) 36px
+  );
+}
+
+/* Static dot grid + grain paper background (data URI grain prevents shimmer on scroll) */
+.paper-surface {
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(var(--color-paper-line) 1.15px, transparent 1.15px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+  background-size: 24px 24px, 180px 180px;
+  background-position: 0 0, 0 0;
+}
+
+/* Stamp squash reveal outside pinned story */
+@keyframes stamp-squash {
+  0% {
+    opacity: 0;
+    transform: scale(1.35) rotate(calc(var(--stamp-rot, -6deg) - 6deg));
+  }
+  65% {
+    opacity: 1;
+    transform: scale(0.92) rotate(var(--stamp-rot, -6deg));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--stamp-rot, -6deg));
+  }
+}
+
+.stamp-animate {
+  animation: stamp-squash 0.42s cubic-bezier(0.3, 1.5, 0.5, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker-btn:hover,
+  .sticker-btn:active {
+    transform: none;
+    box-shadow: 3px 3px 0 var(--color-ink);
+  }
+  .stamp-animate {
+    animation: none;
+  }
+}
