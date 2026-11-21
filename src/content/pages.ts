@@ -397,15 +397,25 @@ export const contactPage = {
   heading: "Talk to real humans.",
   highlightWord: "humans",
   sub: "Whether you have a pre-sales question, need help configuring a world or VPS, or want to claim a Discord reward, reach us through our verified support channels.",
+  email: "support@petalnodes.cloud",
   channels: [
     {
       id: "discord",
       title: "Discord Community & Tickets",
       description:
-        "Fastest way to reach the team, ask pre-sales questions, or claim Petal Free Server & Bloom Boost rewards.",
+        "Fastest way to reach the team 24/7, ask pre-sales questions, or claim Petal Free Server & Bloom Boost rewards.",
       ctaLabel: "Join Discord Server",
       hrefKey: "discord" as const,
       stamp: "ACTIVE",
+    },
+    {
+      id: "email",
+      title: "Direct Email Support",
+      description:
+        "Reach our team directly at support@petalnodes.cloud for general inquiries, accounts, and assistance.",
+      ctaLabel: "Email Us",
+      hrefKey: "email" as const,
+      stamp: "OFFICIAL",
     },
     {
       id: "billing",
@@ -426,8 +436,7 @@ export const contactPage = {
       stamp: "LIVE",
     },
   ],
-  emailTodo: "TODO: official support email address (ask owner before publishing)",
-  hoursTodo: "TODO: typical support response window (ask owner before publishing)",
+  supportHours: "24/7 ticket support via Discord and Client Area; email responses typically within 24 hours.",
 };
 
 export interface LegalSection {

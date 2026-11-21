@@ -140,6 +140,7 @@ export const links = {
   gamePanel: "https://panel.petalnodes.cloud",
   discord: "https://discord.gg/GS3wuc4HGk",
   status: "https://status.petalnodes.cloud",
+  email: "support@petalnodes.cloud",
   docs: "/docs",
   terms: "/terms",
   privacy: "/privacy",
