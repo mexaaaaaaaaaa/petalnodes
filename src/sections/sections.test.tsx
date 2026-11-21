@@ -13,6 +13,7 @@ import {
   plans,
   story,
   vpsPlans,
+  vpsSection,
   type Plan,
 } from "@/content";
 import { HAND_ICON_NAMES, HandIcon, RoughBox, StickerButton } from "@/components/sketch";
@@ -189,7 +190,7 @@ describe("Plans, Rewards, Trust, FAQ, Static story, 404, Nav & Footer", () => {
       assert.ok(vpsHtml.includes(vp.name));
     }
     assert.ok(vpsHtml.includes("Available Regions"));
-    assert.ok(vpsHtml.includes("Order via Billing Store"));
+    assert.ok(vpsHtml.includes(vpsSection.cardCta));
     assert.ok(vpsHtml.includes("Minecraft vs. VPS vs. Bot Hosting"));
 
     const botHtml = wrap(<BotHosting />);

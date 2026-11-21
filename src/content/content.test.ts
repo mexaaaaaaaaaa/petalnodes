@@ -113,12 +113,6 @@ test("confirmed URLs are set, TikTok is absent, and unverified loaders are exclu
 test("listTodos tracks remaining unconfirmed URLs, bot draft specs, and legal review markers", () => {
   const todos = listTodos();
   const paths = new Set(todos.map((t) => t.path));
-  for (let i = 0; i < plans.length; i++) {
-    assert.ok(paths.has(`plans[${i}].paymenterUrl`));
-  }
-  for (let i = 0; i < vpsPlans.length; i++) {
-    assert.ok(paths.has(`vpsPlans[${i}].paymenterUrl`));
-  }
   assert.ok(paths.has("links.socials[0].href"));
   assert.ok(paths.has("botHosting.supportedRuntimesTodo"));
   assert.ok(paths.has("botHosting.miamiLatencyTodo"));

@@ -266,7 +266,7 @@ export const plans: Plan[] = [
     storage: "10GB NVMe",
     goodFor: "2–5 friends, vanilla",
     priceMonthly: "₹59",
-    paymenterUrl: "TODO: Seed Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Just you and a couple of friends.",
   },
   {
@@ -277,7 +277,7 @@ export const plans: Plan[] = [
     storage: "15GB NVMe",
     goodFor: "5–10 players, light plugins",
     priceMonthly: "₹99",
-    paymenterUrl: "TODO: Sprout Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "A cozy survival world that's starting to grow.",
   },
   {
@@ -288,7 +288,7 @@ export const plans: Plan[] = [
     storage: "25GB NVMe",
     goodFor: "10–20 players, plugin servers",
     priceMonthly: "₹169",
-    paymenterUrl: "TODO: Sapling Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "The sweet spot. Room for plugins and friends.",
     ourPick: true,
   },
@@ -300,7 +300,7 @@ export const plans: Plan[] = [
     storage: "35GB NVMe",
     goodFor: "Active SMPs & Fabric mods",
     priceMonthly: "₹239",
-    paymenterUrl: "TODO: Blossom Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Modded adventures, in full bloom.",
   },
   {
@@ -311,7 +311,7 @@ export const plans: Plan[] = [
     storage: "45GB NVMe",
     goodFor: "Heavy Paper/Fabric worlds",
     priceMonthly: "₹299",
-    paymenterUrl: "TODO: Grove Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Room to spare for bustling towns.",
   },
   {
@@ -322,7 +322,7 @@ export const plans: Plan[] = [
     storage: "55GB NVMe",
     goodFor: "Large communities & heavy plugins",
     priceMonthly: "₹369",
-    paymenterUrl: "TODO: Orchard Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "A whole orchard of thriving worlds.",
   },
   {
@@ -333,7 +333,7 @@ export const plans: Plan[] = [
     storage: "65GB NVMe",
     goodFor: "Peak community worlds & networks",
     priceMonthly: "₹449",
-    paymenterUrl: "TODO: Sakura Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Our flagship cherry blossom tier.",
   },
 ];
@@ -348,7 +348,7 @@ export const vpsPlans: VpsPlan[] = [
     vcpu: "2 vCPU",
     storage: "20GB NVMe",
     priceMonthly: "₹300",
-    paymenterUrl: "TODO: Root VPS Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Compact KVM Linux node for bots, proxies, or lightweight services.",
   },
   {
@@ -358,7 +358,7 @@ export const vpsPlans: VpsPlan[] = [
     vcpu: "2 vCPU",
     storage: "30GB NVMe",
     priceMonthly: "₹500",
-    paymenterUrl: "TODO: Branch VPS Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Balanced memory for web apps, panels, and multi-service stacks.",
   },
   {
@@ -368,7 +368,7 @@ export const vpsPlans: VpsPlan[] = [
     vcpu: "3 vCPU",
     storage: "40GB NVMe",
     priceMonthly: "₹800",
-    paymenterUrl: "TODO: Trunk VPS Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Three dedicated vCPU threads with ample DDR5 memory.",
   },
   {
@@ -378,7 +378,7 @@ export const vpsPlans: VpsPlan[] = [
     vcpu: "4 vCPU",
     storage: "60GB NVMe",
     priceMonthly: "₹1,200",
-    paymenterUrl: "TODO: Canopy VPS Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Serious capacity for networks, databases, and custom workloads.",
   },
   {
@@ -388,7 +388,7 @@ export const vpsPlans: VpsPlan[] = [
     vcpu: "4 vCPU",
     storage: "80GB NVMe",
     priceMonthly: "₹1,600",
-    paymenterUrl: "TODO: Evergrove VPS Paymenter URL",
+    paymenterUrl: "https://billing.petalnodes.cloud",
     cardLine: "Flagship 16GB KVM root server built for heavy projects.",
   },
 ];
