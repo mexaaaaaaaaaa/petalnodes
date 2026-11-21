@@ -152,9 +152,9 @@ export const links = {
   vps: "/vps",
   bots: "/bots",
   socials: [
-    { label: "YouTube", href: "TODO: verified YouTube URL (Petalnodes)" },
-    { label: "X", href: "TODO: verified X URL (@petalnodes)" },
-    { label: "Instagram", href: "TODO: verified Instagram URL (@petalnodes)" },
+    { label: "YouTube", href: "https://youtube.com/@petalnodes" },
+    { label: "X", href: "https://x.com/petalnodes" },
+    { label: "Instagram", href: "https://instagram.com/petalnodes" },
   ] as FooterLink[],
 };
 
